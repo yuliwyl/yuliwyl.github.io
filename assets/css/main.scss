@@ -2,3 +2,7 @@
 @import "0-tools/bourbon/bourbon";
 
 @import "2-modules/header.sass";
+
+@import "1-base/_vars";
+
+@import "3-layouts/home.sass";
