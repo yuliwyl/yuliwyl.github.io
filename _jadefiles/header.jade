@@ -1,14 +1,31 @@
+mixin nav-content()
+  ul
+     li: a(href="#about") ABOUT
+     li: a(href="#video") VIDEO
+     li: a(href="#branding") BRANDING
+     li: a(href="#digital") DIGITAL
+     li: a(href="#acting") ACTING
+     li: a(href="#photography") PHOTOGRAPHY
+     li: a(href="#contact") CONTACT
+
+
+
+.mobile-nav.
+  +nav-content()
+
+
+
+
+
 header
-  h1.logo 
+  .header-position
 
-  nav.site-nav
-    ul
-      li: a(href="#about") ABOUT
-      li: a(href="#video") VIDEO
-      li: a(href="#branding") BRANDING
-      li: a(href="#digital") DIGITAL
-      li: a(href="#acting") ACTING
-      li: a(href="#photography") PHOTOGRAPHY
-      li: a(href="#contact") CONTACT
+    h1.logo 
 
-  a(href="mailto:yuliwyl@gmail.com").email-link +email me
+    nav.site-nav
+      +nav-content()
+      
+
+    a(href="mailto:yuliwyl@gmail.com").email-link +email me
+
+    .mobile-nav-toggle: span 

@@ -1,8 +1,10 @@
 
 @import "0-tools/bourbon/bourbon";
-
-@import "2-modules/header.sass";
+@import "0-tools/normalize";
 
 @import "1-base/_vars";
 
-@import "3-layouts/home.sass";
+@import "3-sections/header.sass";
+@import "3-sections/home-about.sass";
+
+@import "4-layouts/home.sass";
