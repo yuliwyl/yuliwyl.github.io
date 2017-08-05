@@ -3,7 +3,7 @@ $(window).scroll(function(){
 });
 
 function videoscroll() {
-    var wscroll = $(window).scrolltop();
+    var wscroll = $(window).scrollTop();
 
     $('.video-strip').css('background-position', 'center -' + wscroll + 'px')
 
