@@ -1,4 +1,4 @@
-$(window).scroll(function() {
+$(window).scroll(function(){
     videoscroll();
 });
 
