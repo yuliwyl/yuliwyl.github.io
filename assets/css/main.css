@@ -637,7 +637,6 @@ section.about {
 
 section.video {
   background-image: url(../img/video-bg.png);
-  background-color: pink;
   background-position: center;
   background-size: cover;
   color: white; }
@@ -658,7 +657,8 @@ section.video {
     height: calc(100% + 100px);
     background-image: url(../img/logo-yw.png);
     background-position: center 0px;
-    background-repeat: repeat-y; }
+    background-repeat: repeat-y;
+    background-size: 50%; }
   section.video .col-1 {
     position: relative;
     height: 360px;
