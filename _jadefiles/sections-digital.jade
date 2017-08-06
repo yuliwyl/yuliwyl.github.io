@@ -1,0 +1,29 @@
+mixin app-img(link, img)
+  a(href="#{link}").app-img-link
+    img(src="assets/img/app/#{img}")
+
+section.digital
+  .flex.flex--center
+    .col-50.flex.flex--center.website
+      .col-2
+        p.home-lead WEB DESIGN
+        .cf
+          
+          img(src="assets/img/website/website-2.jpg")
+        a(href="").home-cta CHECK MORE
+        
+
+    .col-50.flex.flex-center.app
+      .col-2
+        p.home-lead APP DESIGN
+        
+        .cf
+         +app-img('http://yuliannaw.com','app-1.png')
+         +app-img('http://yuliannaw.com','app-2.png')
+         +app-img('http://yuliannaw.com','app-3.png')
+         +app-img('http://yuliannaw.com','app-4.png')
+        .cf
+          
+        a(href="").home-cta CHECK MORE
+        
+  
