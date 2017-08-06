@@ -1,0 +1,50 @@
+section.acting
+  background:
+    color: grey
+    image: url()
+    size: cover
+  color: white
+
+  iframe
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.2)
+
+  .home-cta
+    color: grey
+
+  .flex-video
+    box-shadow: 0px 4px 40px 3px rgba(0,0,0,0.5)
+    transform: scale(1.6)
+    display: flex
+    align-items: center
+    margin-top: 50px
+    margin-bottom: 50px
+    margin-left: 50px
+    @meida (max*width: 1190px)
+      transform: scale(1)
+
+
+  .description
+    display: flex
+    align-items: center
+
+  .col-2
+    @media (max-width: 1190px)
+      width: 300px
+    @media (max-width: 640px)
+      height: auto
+      display: block
+      padding: 10px 10px
+      &:last-child
+        padding: 0px 20px 10px
+
+
+  @media (max-width: 640px)
+    .col-2
+      text-align: center
+    .description
+      margin-top: 50px
+    .flex-video
+      transform: scale(1.5)
+      margin-left: 30px
+    .home-cta
+      margin-left: 80px
