@@ -1,5 +1,5 @@
-mixin app-img(link, img)
-  a(href="#{link}").app-img-link
+mixin app-img(link, img, color)
+  a(href="#{link}" data-color="#{color}").app-img-link
     img(src="assets/img/app/#{img}")
 
 section.digital
@@ -13,12 +13,12 @@ section.digital
         a(href="").home-cta CHECK MORE
         
 
-    .col-50.flex.flex-center.app
+    .col-50.flex.flex-center.app(data-orig-color="yellow")
       .col-2
         p.home-lead APP DESIGN
         
         .cf
-         +app-img('http://yuliannaw.com','app-1.png')
+         +app-img('http://yuliannaw.com','app-1.png','blue')
          +app-img('http://yuliannaw.com','app-2.png')
          +app-img('http://yuliannaw.com','app-3.png')
          +app-img('http://yuliannaw.com','app-4.png')

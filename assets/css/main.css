@@ -700,7 +700,8 @@ section.digital {
     background-color: pink;
     background-image: url();
     background-position: center;
-    padding: 50px 0; }
+    padding: 50px;
+    transition: background-color 200ms ease-in-out; }
     section.digital .website.app, section.digital .app.app {
       background-color: yellow; }
       section.digital .website.app .home-cta, section.digital .app.app .home-cta {
@@ -709,7 +710,7 @@ section.digital {
     color: pink;
     text-align: center;
     position: relative;
-    margin-left: 150px; }
+    margin: auto; }
   section.digital img {
     max-width: 100%; }
   section.digital .app-img-link {
@@ -718,7 +719,12 @@ section.digital {
     width: calc(50% - 14px);
     border: 2px solid white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    margin: 5px; }
+    margin: 5px;
+    transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out; }
+    section.digital .app-img-link:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     section.digital .app-img-link img {
       max-width: 100%;
       display: block; }
@@ -726,8 +732,7 @@ section.digital {
     clear: both;
     margin-bottom: 20px; }
   section.digital .col-2 {
-    position: relative;
-    margin-left: 50px; }
+    position: relative; }
     @media (max-width: 640px) {
       section.digital .col-2 {
         margin-left: 10px; } }
@@ -772,8 +777,7 @@ section.digital {
   margin: 0 10px; }
 
 .col-2 {
-  max-width: 620px;
-  margin: 0 10px; }
+  max-width: 7300px; }
 
 .col-50 {
   width: 50%;

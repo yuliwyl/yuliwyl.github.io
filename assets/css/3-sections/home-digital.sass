@@ -16,7 +16,11 @@ section.digital
       color: pink
       image: url()
       position: center
-    padding: 50px 0
+    padding: 50px
+    transition: background-color 200ms ease-in-out
+
+
+
     &.app
       background:
         color: yellow
@@ -28,7 +32,7 @@ section.digital
     font-size:
     text-align: center
     position: relative
-    margin-left: 150px
+    margin: auto
 
 
 
@@ -43,6 +47,10 @@ section.digital
     border: 2px solid white
     box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
     margin: 5px
+    transition: transform 200ms ease-in-out
+
+    &:hover
+      transform: scale(1.1)
 
     //border: 2px solid white
 
@@ -56,6 +64,6 @@ section.digital
 
   .col-2
     position: relative
-    margin-left: 50px
+
     @media(max-width: 640px)
       margin-left: 10px
