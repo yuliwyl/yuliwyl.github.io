@@ -8,6 +8,9 @@ section.photo
   .col-1
     align-items: center
 
+  .desc-wrap
+    margin-top: 100px
+
 
 
   .home-cta
@@ -27,6 +30,17 @@ section.photo
     float: left
     position: relative
     overflow: hidden
+    z-index: 1
+    opacity: 0
+    transition: all 300ms ease-in-out
+
+    &.is-visible
+      opacity: 1
+
+    &.is-emph
+      animation-name: tada
+      animation-duration: 1s
+      animation-fill-mode: both
 
     &:after
       content: ''
@@ -49,6 +63,8 @@ section.photo
 
     .name
       font-size: 18px
+      line-height: 1
+
     .date
       font-size: italic
 
@@ -56,9 +72,30 @@ section.photo
     opacity: 1
     transform: translate(0%, 0%)scale(1)
 
+  @media (max-width: 999px)
+    .photo-thumb
+      width: 33.3%
+
   @media (max-width: 640px)
     .desc-wrap
       margin-top: 100px
       text-align: center
     .home-cta
-      margin-left: 80px
+      margin-left: 90px
+
+
+  @keyframes tada
+    from
+      transform: scale3d(1, 1, 1)
+
+    10%, 20%
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+
+    30%, 50%, 70%, 90%
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+
+    40%, 60%, 80%
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+
+    to
+      transform: scale3d(1, 1, 1)
