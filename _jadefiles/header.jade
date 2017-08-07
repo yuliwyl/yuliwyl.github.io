@@ -8,18 +8,15 @@ mixin nav-content()
      li: a(href="#photography") PHOTOGRAPHY
      li: a(href="#contact") CONTACT
      
-.mobile-nav.
-  +nav-content()
+  .mobile-nav
+    +nav-content()
 
 header
   .header-position
 
     h1.logo 
-
     nav.site-nav
-      +nav-content()
-      
-
-    a(href="mailto:yuliwyl@gmail.com").email-link +email me
+      +nav-content()    
+    a(href="mailto:yuliwyl@gmail.com").email-link EMAIL ME
 
     .mobile-nav-toggle: span 

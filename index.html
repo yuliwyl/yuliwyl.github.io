@@ -4,24 +4,17 @@ title: Your New Jekyll Site
 ---
 
 <div class="home-wrap">
+  
+  {% include header.html %}
 
-
-    {% include header.html %}
-
-    <div class="home-sections">
-        {% include sections-about.html %}
-        {% include sections-video.html %}
-        {% include sections-digital.html %}
-        {% include sections-acting.html %}
-        {% include sections-photo.html %}
-
-        <!--all sections here -->
-
-        <Div style="height:2000px"></Div>
-
-
-
-    </div>
+  <div class="home-sections">
+    {% include sections-about.html %}
+    {% include sections-video.html %}
+    {% include sections-digital.html %}
+    {% include sections-acting.html %}
+    {% include sections-photo.html %}
+    {% include sections-footer.html %}
+  </div>
 
 
 </div>
