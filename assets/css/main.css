@@ -492,7 +492,6 @@ body {
 
 .home-wrap header {
   width: 135px;
-  background: white;
   padding: 30px 0; }
   .home-wrap header .header-position {
     position: fixed;
@@ -511,6 +510,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .home-wrap header .logo {
+    max-width: 135px;
     background-image: url(../img/logo-yw.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -570,7 +570,7 @@ body {
   display: none;
   position: absolute;
   width: 100%;
-  background: pink;
+  background: white;
   padding: 30px 0 20px;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -584,10 +584,10 @@ body {
     margin-bottom: 10px; }
 
 @media (max-width: 775px) {
-  .home-wrap .home-wrap header {
+  .home-wrap header {
     width: auto;
     padding: 10px 0; }
-    .home-wrap .home-wrap header .header-position {
+    .home-wrap header .header-position {
       width: auto;
       position: relative;
       top: auto;
@@ -600,17 +600,17 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    .home-wrap .home-wrap header .site-nav {
+    .home-wrap header .site-nav {
       display: none; }
-    .home-wrap .home-wrap header .email-link {
+    .home-wrap header .email-link {
       display: none; }
-    .home-wrap .home-wrap header .logo {
+    .home-wrap header .logo {
       height: 30px; }
-    .home-wrap .home-wrap header .mobile-nav-toggle {
+    .home-wrap header .mobile-nav-toggle {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-  .home-wrap .home-wrap .mobile-nav.is-open {
+  .home-wrap .mobile-nav.is-open {
     display: block;
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
