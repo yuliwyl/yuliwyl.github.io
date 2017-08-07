@@ -518,7 +518,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 39px;
+    height: 119px;
     padding: 0;
     margin: 0; }
   .home-wrap header .site-nav ul {
@@ -644,6 +644,7 @@ section.about {
   background-size: cover;
   color: white;
   position: relative;
+  z-index: 1000;
   overflow: hidden; }
   section.about video {
     position: absolute;
@@ -651,7 +652,7 @@ section.about {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: -1000;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -665,7 +666,7 @@ section.about {
     color: white;
     font-size: 60px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.3;
     margin-top: 0; }
   section.about p {
     z-index: 2;
@@ -682,31 +683,42 @@ section.about {
     max-width: 300px; } }
 
 section.video {
-  background-image: url(../img/video-bg.png);
-  background-position: center;
+  background-image: url(../img/video-bg2.png);
+  background-position: center top;
   background-size: cover;
-  background-filter: contrast(50%);
-  color: white; }
+    background-size-filter: contrast(50%);
+  color: white;
+  height: 380px; }
   section.video .home-lead.outdented {
-    line-height: 1.6;
-    font-size: 28px; }
+    line-height: 2;
+    font-size: 28px;
+    margin-bottom: 50px; }
+    @media (max-width: 985px) {
+      section.video .home-lead.outdented {
+        font-size: 23px;
+        margin-bottom: 10px; } }
+    @media (max-width: 640px) {
+      section.video .home-lead.outdented {
+        font-size: 23px;
+        margin-bottom: 10px; } }
   section.video .home-cta {
     color: black; }
   section.video .flex-video {
     box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.6);
-            transform: scale(1.6); }
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
     @media (max-width: 985px) {
       section.video .flex-video {
         -webkit-transform: scale(1);
-                transform: scale(1); } }
+                transform: scale(1);
+        margin-bottom: 15px; } }
   section.video .video-strip {
     position: absolute;
     top: 0;
-    margin: -50px 0;
+    margin: -100px 0;
     width: 100%;
-    height: calc(100% + 100px);
-    background-image: url(../img/logo-yw.png);
+    height: calc(100% + 200px);
+    background-image: url(../img/video-strip.jpg);
     background-position: center 0px;
     background-repeat: repeat-y;
     background-size: 100%; }
@@ -716,9 +728,13 @@ section.video {
   section.video .col-1 {
     position: relative;
     height: 330px;
+    width: 560px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -728,9 +744,10 @@ section.video {
             justify-content: center; }
     @media (max-width: 640px) {
       section.video .col-1 {
+        width: auto;
         height: auto;
         display: block;
-        padding: 30px 20px; }
+        padding: 10px 20px; }
         section.video .col-1:last-child {
           padding: 0px 20px 30px; } }
 
