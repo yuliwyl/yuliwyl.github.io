@@ -522,7 +522,9 @@ body {
     list-style: none;
     margin: 20px 0;
     padding: 0 80px 0 0;
-    text-align: right; }
+    text-align: right;
+    text-decoration: none;
+    color: red; }
   .home-wrap header .site-nav li {
     margin-bottom: 10px; }
     .home-wrap header .site-nav li:last-child {
@@ -623,13 +625,33 @@ body {
 section.about {
   background-image: url(../img/about-bg.jpg);
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  color: white;
+  position: relative;
+  overflow: hidden; }
+  section.about video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background: transparent; }
   section.about h2 {
+    z-index: 2;
+    position: relative;
     color: pink;
     font-size: 60px;
-      font-size-font-weight: 400;
+    font-weight: 400;
     line-height: 1;
     margin-top: 0; }
+  section.about p {
+    z-index: 2;
+    position: relative; }
   section.about .home-lead {
     padding-bottom: 58px; }
 
