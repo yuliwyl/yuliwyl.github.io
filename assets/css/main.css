@@ -456,9 +456,7 @@ body {
 body {
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Fira Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
+  font-family: 'Fira Sans', sans-serif; }
 
 .home-cta {
   font-size: 18px;
@@ -509,6 +507,11 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .home-wrap header a {
+    color: #40393d;
+    text-align: right; }
+    .home-wrap header a:hover, .home-wrap header a:active {
+      color: #e55d74; }
   .home-wrap header .logo {
     max-width: 135px;
     background-image: url(../img/logo-yw.png);
@@ -521,12 +524,12 @@ body {
   .home-wrap header .site-nav ul {
     list-style: none;
     margin: 20px 0;
-    padding: 0 80px 0 0;
+    font-size: 15px;
+    padding: 0 20px 0 0;
     text-align: right;
-    text-decoration: none;
-    color: red; }
+    text-decoration: none; }
   .home-wrap header .site-nav li {
-    margin-bottom: 10px; }
+    margin-bottom: 30px; }
     .home-wrap header .site-nav li:last-child {
       margin-bottom: 0; }
   .home-wrap header .email-link {
@@ -540,7 +543,12 @@ body {
     margin-right: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    cursor: pointer; }
+    .home-wrap header .mobile-nav-toggle:selection {
+      background: transparent; }
+    .home-wrap header .mobile-nav-toggle:-moz-selection {
+      background: transparent; }
     .home-wrap header .mobile-nav-toggle span,
     .home-wrap header .mobile-nav-toggle span:before,
     .home-wrap header .mobile-nav-toggle span:after {
@@ -548,7 +556,7 @@ body {
       display: block;
       height: 3px;
       width: 100%;
-      background: black;
+      background: #40393d;
       position: relative;
       transition: all 0.3s ease-in-out; }
     .home-wrap header .mobile-nav-toggle span:before {
@@ -558,7 +566,7 @@ body {
     .home-wrap header .mobile-nav-toggle:hover span,
     .home-wrap header .mobile-nav-toggle:hover span:before,
     .home-wrap header .mobile-nav-toggle:hover span:after {
-      background: pink; }
+      background: #e55d74; }
     .home-wrap header .mobile-nav-toggle.is-open span {
       background: transparent; }
     .home-wrap header .mobile-nav-toggle.is-open span:before,
@@ -567,8 +575,7 @@ body {
               transform-origin: center;
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
-      top: auto;
-      bottom: auto; }
+      top: 0; }
     .home-wrap header .mobile-nav-toggle.is-open span:after {
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg); }
@@ -582,18 +589,25 @@ body {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   transition: all 0.3s ease-in-out; }
+  .home-wrap .mobile-nav a {
+    color: #40393d;
+    text-align: right;
+    font-size: 15px; }
+    .home-wrap .mobile-nav a:hover, .home-wrap .mobile-nav a:active {
+      color: #e55d74; }
   .home-wrap .mobile-nav ul {
     list-style: none;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    font-size: 15px; }
   .home-wrap .mobile-nav li {
     text-align: center;
-    margin-bottom: 10px; }
+    margin-bottom: 15px; }
 
 @media (max-width: 775px) {
   .home-wrap header {
     width: auto;
-    padding: 10px 0; }
+    padding: 20px 0; }
     .home-wrap header .header-position {
       width: auto;
       position: relative;
@@ -620,7 +634,9 @@ body {
   .home-wrap .mobile-nav.is-open {
     display: block;
     -webkit-transform: translateY(0%);
-            transform: translateY(0%); } }
+            transform: translateY(0%);
+    z-index: 3;
+    position: relative; } }
 
 section.about {
   background-image: url(../img/about-bg.jpg);
@@ -640,18 +656,22 @@ section.about {
     min-height: 100%;
     width: auto;
     height: auto;
-    background: transparent; }
+    background: transparent;
+    -webkit-filter: black;
+            filter: black; }
   section.about h2 {
     z-index: 2;
     position: relative;
-    color: pink;
+    color: white;
     font-size: 60px;
     font-weight: 400;
     line-height: 1;
     margin-top: 0; }
   section.about p {
     z-index: 2;
-    position: relative; }
+    position: relative;
+    font-weight: 300;
+    letter-spacing: 0.05em; }
   section.about .home-lead {
     padding-bottom: 58px; }
 
@@ -665,6 +685,7 @@ section.video {
   background-image: url(../img/video-bg.png);
   background-position: center;
   background-size: cover;
+  background-filter: contrast(50%);
   color: white; }
   section.video .home-lead.outdented {
     line-height: 1.6;

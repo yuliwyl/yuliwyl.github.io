@@ -13,6 +13,13 @@
       flex-direction: column
       justify-content: space-between
 
+    a
+      color: #40393d
+      text-align: right
+
+      &:hover, &:active
+       color: #e55d74
+
     .logo
       max-width: 135px
       background:
@@ -29,13 +36,14 @@
       ul
         list-style: none
         margin: 20px 0
-        padding: 0 80px 0 0
+        font-size: 15px
+        padding: 0 20px 0 0
         text-align: right
         text-decoration: none
-        color: red
+
 
       li
-        margin-bottom: 10px
+        margin-bottom: 30px
 
         &:last-child
           margin-bottom: 0
@@ -50,8 +58,14 @@
       width: 50px
       height: 50px
       margin-right: 20px
-
       align-items: center
+      cursor: pointer
+
+      &:selection
+        background: transparent
+
+      &:-moz-selection
+        background: transparent
 
       span,
       span:before,
@@ -60,7 +74,7 @@
         display: block
         height: 3px
         width: 100%
-        background: black
+        background: #40393d
         position: relative
 
         transition: all 0.3s ease-in-out
@@ -74,7 +88,7 @@
       &:hover span,
       &:hover span:before,
       &:hover span:after
-        background: pink
+        background: #e55d74
 
 
       &.is-open span
@@ -84,8 +98,7 @@
       &.is-open span:after
         transform-origin: center
         transform: rotate(45deg)
-        top: auto
-        bottom: auto
+        top: 0
 
       &.is-open span:after
         transform: rotate(-45deg)
@@ -100,21 +113,31 @@
     transform: translateY(-100%)
     transition: all 0.3s ease-in-out
 
+    a
+      color: #40393d
+      text-align: right
+      font-size: 15px
+
+      &:hover, &:active
+       color: #e55d74
+
+
     ul
       list-style: none
       margin: 0
       padding: 0
+      font-size: 15px
 
     li
       text-align: center
-      margin-bottom: 10px
+      margin-bottom: 15px
 
 
 @media (max-width: 775px)
   .home-wrap
     header
       width: auto
-      padding: 10px 0
+      padding: 20px 0
 
       .header-position
         width: auto
@@ -139,3 +162,5 @@
     .mobile-nav.is-open
       display: block
       transform: translateY(0%)
+      z-index: 3
+      position: relative
