@@ -1,56 +1,49 @@
 .home-sections .branding
   padding: 0px
   overflow: hidden
-  height: 350px
+  height: 390px
   background-color:grey
 
 section.branding
-  .col-1
-    align-items: center
   p
     z-index: 10000
     font-size: 36px
     text-align: center
     position: absolute
-    width: 33.3%
+    width: 33.3333%
     color: white
-    padding-top: 100px
+    padding-top: 30px
 
-  .figure
+  .slide
     width: 33.3%
     float: left
+
+  
+
   figure img
     width: 100%
     float: left
+
 
   figure
     position: relative
     width: 300%
     margin: 0
     left: 0
-    animation: 5s slidy infinite
+    animation: slidy 16s ease-in-out infinite
 
-  @keyframe slidy
-    left: 0%
-
-  @keyframe slidy 10%
-    left: 0%
-
-  @keyframe slidy 12%
-    left: -100%
-
-  @keyframe slidy 22%
-    left: -100%
-
-  @keyframe slidy 48%
-    left: -200%
-
-  @keyframe slidy 58%
-    left: -200%
-
-  @keyframe slidy 84%
-    left: -100%
-  @keyframe slidy 94%
-    left: -100%
-  @keyframe slidy 96%
-    left: 0%
+  @keyframes slidy
+    0%
+      left: 0%
+    10%
+      left: 0%
+    25%
+      left: -100%
+    50%
+      left: -200%
+    75%
+      left: -100%
+    90%
+      left: 0%
+    100%
+      left: 0%
