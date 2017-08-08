@@ -646,6 +646,13 @@ section.about {
   position: relative;
   z-index: 1000;
   overflow: hidden; }
+  section.about .overlay {
+    display: block;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    z-index: 2;
+    color: red; }
   section.about video {
     position: absolute;
     top: 50%;
@@ -657,6 +664,7 @@ section.about {
     min-height: 100%;
     width: auto;
     height: auto;
+    color: red;
     background: transparent;
     -webkit-filter: black;
             filter: black; }
@@ -683,10 +691,11 @@ section.about {
     max-width: 300px; } }
 
 section.video {
+  background-linear-gradient: red, blue;
   background-image: url(../img/video-bg2.png);
+  background-color: red;
   background-position: center top;
   background-size: cover;
-    background-size-filter: contrast(50%);
   color: white;
   height: 380px; }
   section.video .home-lead.outdented {
@@ -755,7 +764,7 @@ section.video {
   padding: 0px; }
 
 section.digital {
-  color: #ece9ed; }
+  color: white; }
   section.digital .home-lead {
     text-align: center;
     font-size: 36px; }
@@ -803,6 +812,12 @@ section.digital {
     @media (max-width: 640px) {
       section.digital .col-2 {
         margin-left: 10px; } }
+
+.home-sections .branding {
+  padding: 0px; }
+
+section.branding {
+  color: red; }
 
 section.acting {
   background-color: grey;
