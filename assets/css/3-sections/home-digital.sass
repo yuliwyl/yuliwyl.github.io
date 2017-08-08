@@ -2,51 +2,48 @@
   padding: 0px
 
 section.digital
-  color: white
+  color: #ece9ed
 
   .home-lead
     text-align: center
     font-size: 36px
 
-
-
-
   .website, .app
     background:
-      color: pink
+      color: #a0f0dc
       image: url()
       position: center
-    padding: 50px
+    padding: 20px
     transition: background-color 200ms ease-in-out
 
-
+    &.website
+      padding-left: 50px
+      padding-right: 50px
 
     &.app
       background:
-        color: yellow
+        color: #f5c6c9
       .home-cta
-        color: yellow
+        color: #f5c6c9
 
   .home-cta
-    color: pink
+    color: #a0f0dc
     font-size:
     text-align: center
     position: relative
     margin: auto
 
-
-
   img
     max-width: 100%
-
 
   .app-img-link
     display: block
     float: left
-    width: calc(50% - 14px)
-    border: 2px solid white
+    width: calc(50% - 18px)
+    border: 1px solid white
     box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
-    margin: 5px
+    margin: 8px
+    margin-bottom: 20px
     transition: transform 200ms ease-in-out
 
     &:hover
@@ -62,8 +59,8 @@ section.digital
     clear: both
     margin-bottom: 20px
 
+
   .col-2
     position: relative
-
     @media(max-width: 640px)
       margin-left: 10px

@@ -755,22 +755,25 @@ section.video {
   padding: 0px; }
 
 section.digital {
-  color: white; }
+  color: #ece9ed; }
   section.digital .home-lead {
     text-align: center;
     font-size: 36px; }
   section.digital .website, section.digital .app {
-    background-color: pink;
+    background-color: #a0f0dc;
     background-image: url();
     background-position: center;
-    padding: 50px;
+    padding: 20px;
     transition: background-color 200ms ease-in-out; }
+    section.digital .website.website, section.digital .app.website {
+      padding-left: 50px;
+      padding-right: 50px; }
     section.digital .website.app, section.digital .app.app {
-      background-color: yellow; }
+      background-color: #f5c6c9; }
       section.digital .website.app .home-cta, section.digital .app.app .home-cta {
-        color: yellow; }
+        color: #f5c6c9; }
   section.digital .home-cta {
-    color: pink;
+    color: #a0f0dc;
     text-align: center;
     position: relative;
     margin: auto; }
@@ -779,10 +782,11 @@ section.digital {
   section.digital .app-img-link {
     display: block;
     float: left;
-    width: calc(50% - 14px);
-    border: 2px solid white;
+    width: calc(50% - 18px);
+    border: 1px solid white;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    margin: 5px;
+    margin: 8px;
+    margin-bottom: 20px;
     transition: -webkit-transform 200ms ease-in-out;
     transition: transform 200ms ease-in-out; }
     section.digital .app-img-link:hover {
