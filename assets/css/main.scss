@@ -4,9 +4,11 @@
 
 @import "1-base/_base";
 @import "1-base/_vars";
+@import "1-base/_icons";
 
 @import "2-modules/buttons";
 @import "2-modules/flex-video";
+@import "2-modules/single-nav";
 
 @import "3-sections/header.sass";
 @import "3-sections/home-about.sass";
