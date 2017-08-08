@@ -850,12 +850,25 @@ section.about {
   z-index: 1000;
   overflow: hidden; }
   section.about .overlay {
-    display: block;
-    position: relative;
-    height: 300px;
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1000;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-color: red; }
+  section.about .bg {
     z-index: 2;
-    color: red; }
+    position: absolute;
+    background: rgba(251, 207, 120, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
   section.about video {
     position: absolute;
     top: 50%;
@@ -868,30 +881,61 @@ section.about {
     width: auto;
     height: auto;
     color: red;
-    background: transparent;
+    background: blue;
     -webkit-filter: black;
             filter: black; }
+  section.about .flex.flex--center {
+    z-index: 2;
+    position: relative; }
   section.about h2 {
     z-index: 2;
     position: relative;
     color: white;
-    font-size: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    font-size: 50px;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1;
     margin-top: 0; }
   section.about p {
     z-index: 2;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 0.1;
     position: relative;
     font-weight: 300;
-    letter-spacing: 0.05em; }
+    letter-spacing: 0.19em; }
+  section.about .home {
+    padding-top: 30px; }
   section.about .home-lead {
-    padding-bottom: 58px; }
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 30px; }
+  section.about .col-2 {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    border: white solid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 @media (max-width: 640px) {
-  section.about h2, section.about .home-lead {
+  .col-2 {
+    position: relative;
+    margin-left: 20px; }
+  section.about h2 {
     margin-left: auto;
     margin-right: auto;
-    max-width: 300px; } }
+    max-width: 300px;
+    line-height: 1.3; }
+  section.about .home-lead {
+    height: auto;
+    font-size: 20px; }
+  section.about .col-2 {
+    border: none; } }
 
 section.video {
   background-linear-gradient: red, blue;
@@ -903,7 +947,7 @@ section.video {
   height: 380px; }
   section.video .home-lead.outdented {
     line-height: 2;
-    font-size: 28px;
+    font-size: 29px;
     margin-bottom: 50px; }
     @media (max-width: 985px) {
       section.video .home-lead.outdented {
@@ -970,7 +1014,7 @@ section.digital {
   color: white; }
   section.digital .home-lead {
     text-align: center;
-    font-size: 36px; }
+    font-size: 30px; }
   section.digital .website, section.digital .app {
     background-color: #a0f0dc;
     background-image: url();
@@ -1020,6 +1064,11 @@ section.digital {
   padding: 0px;
   overflow: hidden;
   height: 350px; }
+
+section.branding .col-1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 section.branding p {
   z-index: 10000;
@@ -1294,7 +1343,7 @@ section.photo {
     font-weight: 300;
     transition: 100ms ease-in-out; }
     .home-footer a:hover {
-      background: #ad0000; }
+      background: #e00000; }
 
 @meida (max-width: 640px) {
   .home-footer a {
