@@ -569,8 +569,7 @@ body {
   line-height: 1;
   transition: all 0.15s ease-in-out; }
   .home-cta:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-    color: black; }
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); }
 
 .flex-video {
   height: 0;
@@ -773,7 +772,7 @@ nav.tn-nav-wrap {
     .home-wrap header .mobile-nav-toggle:hover span,
     .home-wrap header .mobile-nav-toggle:hover span:before,
     .home-wrap header .mobile-nav-toggle:hover span:after {
-      background: #e55d74; }
+      background: #f5c6c9; }
     .home-wrap header .mobile-nav-toggle.is-open span {
       background: transparent; }
     .home-wrap header .mobile-nav-toggle.is-open span:before,
@@ -962,6 +961,9 @@ section.video {
         margin-bottom: 10px; } }
   section.video .home-cta {
     color: #40393d; }
+    section.video .home-cta:hover {
+      background-color: #f5c6c9;
+      color: white; }
   section.video .flex-video {
     box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.5);
@@ -1030,11 +1032,17 @@ section.digital {
       background-color: #f5c6c9; }
       section.digital .website.app .home-cta, section.digital .app.app .home-cta {
         color: #f5c6c9; }
+        section.digital .website.app .home-cta:hover, section.digital .app.app .home-cta:hover {
+          background-color: #40393d;
+          color: white; }
   section.digital .home-cta {
     color: #aee5d6;
     text-align: center;
     position: relative;
     margin: auto; }
+    section.digital .home-cta:hover {
+      background-color: #40393d;
+      color: white; }
   section.digital img {
     max-width: 100%; }
   section.digital .app-img-link {
@@ -1065,7 +1073,7 @@ section.digital {
 .home-sections .branding {
   padding: 0px;
   overflow: hidden;
-  height: 490px; }
+  max-height: 560px; }
   @media (max-width: 640px) {
     .home-sections .branding {
       height: 220px; } }
@@ -1105,6 +1113,9 @@ section.branding .home-cta {
       -ms-flex-align: center;
           align-items: center;
   width: 190px; }
+  section.branding .home-cta:hover {
+    background-color: #aee5d6;
+    color: white; }
 
 section.branding .slide {
   width: 33.3%;
@@ -1178,6 +1189,9 @@ section.acting {
   section.acting .home-cta {
     color: #fbcf78;
     margin-left: auto; }
+    section.acting .home-cta:hover {
+      background-color: #40393d;
+      color: white; }
   section.acting .flex-video {
     box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.8);
@@ -1261,6 +1275,9 @@ section.photo {
   section.photo .home-cta {
     color: #aee5d6;
     background: white; }
+    section.photo .home-cta:hover {
+      background-color: #40393d;
+      color: white; }
   section.photo .photo-wrap {
     margin: -50px 0; }
     section.photo .photo-wrap::after {
