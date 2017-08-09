@@ -569,7 +569,8 @@ body {
   line-height: 1;
   transition: all 0.15s ease-in-out; }
   .home-cta:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); }
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    color: black; }
 
 .flex-video {
   height: 0;
@@ -716,10 +717,10 @@ nav.tn-nav-wrap {
     color: #40393d;
     text-align: right; }
     .home-wrap header a:hover, .home-wrap header a:active {
-      color: #e55d74; }
+      color: #f5c6c9; }
   .home-wrap header .logo {
     max-width: 135px;
-    background-image: url(../img/logo-yw.png);
+    background-image: url(../img/logo-yw2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -867,7 +868,7 @@ section.about {
   section.about .bg {
     z-index: 2;
     position: absolute;
-    background: rgba(251, 207, 120, 0.5);
+    background: rgba(248, 189, 182, 0.9);
     top: 0;
     bottom: 0;
     left: 0;
@@ -942,7 +943,7 @@ section.about {
 
 section.video {
   background-linear-gradient: red, blue;
-  background-image: url(../img/video-bg2.png);
+  background-image: url(../img/video-bg.jpg);
   background-position: center top;
   background-size: cover;
   color: white;
@@ -960,7 +961,7 @@ section.video {
         font-size: 23px;
         margin-bottom: 10px; } }
   section.video .home-cta {
-    color: #6390b9; }
+    color: #40393d; }
   section.video .flex-video {
     box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.5);
@@ -1026,9 +1027,9 @@ section.digital {
       padding-left: 50px;
       padding-right: 50px; }
     section.digital .website.app, section.digital .app.app {
-      background-color: #f8bdb6; }
+      background-color: #f5c6c9; }
       section.digital .website.app .home-cta, section.digital .app.app .home-cta {
-        color: #f8bdb6; }
+        color: #f5c6c9; }
   section.digital .home-cta {
     color: #aee5d6;
     text-align: center;
@@ -1064,7 +1065,7 @@ section.digital {
 .home-sections .branding {
   padding: 0px;
   overflow: hidden;
-  height: 600px; }
+  height: 490px; }
 
 section.branding p {
   z-index: 10000;
@@ -1093,7 +1094,7 @@ section.branding .home-cta {
   z-index: 10000;
   position: center;
   float: right;
-  color: #e45d74;
+  color: #40393d;
   background-color: white;
   width: 33.3333%;
   text-align: center;
@@ -1105,7 +1106,7 @@ section.branding .home-cta {
 section.branding .slide {
   width: 33.3%;
   float: left;
-  background-color: #e45d74; }
+  background-color: #40393d; }
 
 section.branding figure img {
   width: 100%;
@@ -1165,14 +1166,14 @@ section.branding figure {
     left: 0%; } }
 
 section.acting {
-  background-color: #908a9b;
+  background-color: #ffc39e;
   background-image: url();
   background-size: cover;
   color: white; }
   section.acting iframe {
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2); }
   section.acting .home-cta {
-    color: #908a9b;
+    color: #fbcf78;
     margin-left: auto; }
   section.acting .flex-video {
     box-shadow: 0px 4px 40px 3px rgba(0, 0, 0, 0.5);
@@ -1241,7 +1242,7 @@ section.acting {
 section.photo {
   background-image: url();
   background-repeat: repeat;
-  background-color: #fbcf78; }
+  background-color: #aee5d6; }
   section.photo .col-1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1255,7 +1256,7 @@ section.photo {
     font-size: 30px;
     line-height: 1.5; }
   section.photo .home-cta {
-    color: #fbcf78;
+    color: #aee5d6;
     background: white; }
   section.photo .photo-wrap {
     margin: -50px 0; }
@@ -1289,7 +1290,7 @@ section.photo {
       padding-top: 100%; }
   section.photo .photo-meta {
     position: absolute;
-    background: rgba(251, 207, 120, 0.5);
+    background: rgba(174, 229, 214, 0.5);
     top: 0;
     left: 0;
     right: 0;
@@ -1354,7 +1355,7 @@ section.photo {
             transform: scale3d(1, 1, 1); } }
 
 .home-footer {
-  background: #e45d74; }
+  background: #f5c6c9; }
   .home-footer h {
     font-size: 30px;
     text-align: center;
@@ -1367,7 +1368,7 @@ section.photo {
     padding-top: 10px; }
   .home-footer a {
     color: white;
-    background: #e45d74;
+    background: #f5c6c9;
     display: block;
     width: 100%;
     line-height: 2;
@@ -1376,7 +1377,7 @@ section.photo {
     font-weight: 300;
     transition: 100ms ease-in-out; }
     .home-footer a:hover {
-      background: #e00000; }
+      background: #302b2e; }
 
 @meida (max-width: 640px) {
   .home-footer a {
