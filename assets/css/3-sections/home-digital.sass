@@ -8,16 +8,35 @@ section.digital
     text-align: center
     font-size: 30px
 
-  .website, .app
+  .website, .app, .budget, .piggame
     background:
       color: #aee5d6
       position: center
     padding: 20px
     transition: background-color 200ms ease-in-out
 
-    &.website
-      padding-left: 50px
-      padding-right: 50px
+    &.budget
+      background:
+        color: #f5c6c9
+      .home-cta
+        color: #f5c6c9
+        &:hover
+          background-color: #40393d
+          color: white
+      @media(max-width: 640px)
+        background:
+          color: #aee5d6
+        .home-cta
+          color: #aee5d6
+
+
+    &.piggame
+      @media(max-width: 640px)
+        background:
+          color: #f5c6c9
+        .home-cta
+          color: #f5c6c9
+
 
     &.app
       background:
@@ -28,7 +47,9 @@ section.digital
           background-color:  #40393d
           color: white
 
+
   .home-cta
+    width: 119px
     color: #aee5d6
     font-size:
     text-align: center
