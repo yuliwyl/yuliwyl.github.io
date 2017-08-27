@@ -1,0 +1,86 @@
+.home-sections .branding
+  padding: 0px
+  overflow: hidden
+  max-height: 490px
+  @media (max-width: 640px)
+    height: 220px
+
+
+section.branding
+  p
+    z-index: 10000
+    font-size: 18px
+    text-align: left
+    position: absolute
+    width: 33.3333%
+    color: white
+    padding-top: 0
+    margin-top: 0
+    margin-left: 39px
+    line-height: 2
+
+  a
+    z-index: 10000
+    position: relative
+    background-color: blue
+    width: 33.3333%
+    text-align: center
+    color: blue
+    align-items: center
+
+  .home-cta
+    z-index: 10000
+    position: center
+    float: right
+    color: #40393d
+    background-color: white
+    width: 33.3333%
+    text-align: center
+    align-items: center
+    width: 190px
+    &:hover
+      background-color: #aee5d6
+      color: white
+
+
+  .slide
+    width: 33.3%
+    float: left
+    background-color: #40393d
+
+
+
+  figure img
+    width: 100%
+    float: left
+    position: center bottom
+
+
+  figure
+    position: relative
+    width: 300%
+    margin: 0
+    left: 0
+    animation: slidy 16s ease-in-out infinite
+
+  @keyframes slidy
+    0%
+      left: 0%
+    10%
+      left: 0%
+    15%
+      left: -100%
+    35%
+      left: -100%
+    40%
+      left: -200%
+    55%
+      left: -200%
+    60%
+      left: -100%
+    80%
+      left: -100%
+    85%
+      left: 0%
+    100%
+      left: 0%

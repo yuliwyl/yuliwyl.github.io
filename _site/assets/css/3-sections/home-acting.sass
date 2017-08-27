@@ -1,0 +1,79 @@
+section.acting
+  background:
+    color: #ffc39e
+    image: url()
+    size: cover
+  color: white
+
+  iframe
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.2)
+
+  .home-cta
+    color: #fbcf78
+    margin-left: auto
+    &:hover
+      background-color: #40393d
+      color: white
+
+
+  .flex-video
+    box-shadow: 0px 4px 40px 3px rgba(0,0,0,0.5)
+    transform: scale(1.8)
+    display: flex
+    align-items: center
+    margin-top: 50px
+    margin-bottom: 50px
+    margin-left: 50px
+    @media (max-width: 1190px)
+      transform: scale(1.6)
+
+  .home-lead
+    font-size: 30px
+  .description
+    display: flex
+    align-items: center
+    @media (max-width: 930px)
+      display: none
+
+  .col-2
+    @media (max-width: 1190px)
+      width: 300px
+
+  p
+    text-align: right
+    @meida (max-width: 775px)
+      margin-left: auto
+      margin-right: auto
+      max-width: 300px
+
+
+  @media (max-width: 640px)
+    .col-2
+      align-items: center
+      width: auto
+      height: auto
+      display: block
+      padding: 10px 10px
+      text-align: center
+      height: auto
+      display: block
+
+      &:last-child
+        padding: 0px 0px 10px
+
+    .desc-wrap
+      text-align: center
+      align-items: stretch
+
+    .description
+      margin-top: 50px
+      margin-left: 0
+      margin-right: 0
+      font-size: 28px
+    
+
+    .flex-video
+      transform: scale(1.3)
+
+    .home-cta
+      margin-left: 80px
